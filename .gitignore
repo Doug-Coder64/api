@@ -19,6 +19,7 @@
 .settings
 .springBeans
 .vscode
+*.properties
 /code
 MANIFEST.MF
 _site/
@@ -40,3 +41,4 @@ target
 secrets.yml
 .gradletasknamecache
 .sts4-cache
+
