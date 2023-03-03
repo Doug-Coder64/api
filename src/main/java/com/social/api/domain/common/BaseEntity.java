@@ -13,6 +13,9 @@ public class BaseEntity implements Serializable {
     @Column(name = "date_created", nullable=false)
     private Timestamp dateCreated;
 
+    @Column(name = "date_generated", nullable=false)
+    private Timestamp dateGenerated;
+
     @UpdateTimestamp
     @Column(name = "updated_at")
     private Timestamp updatedAt;
@@ -20,6 +23,7 @@ public class BaseEntity implements Serializable {
     @PrePersist
     public void onInsert() {
         dateCreated = Timestamp.from(Instant.now());
+        dateGenerated = Timestamp.from(Instant.now());
         updatedAt = dateCreated;
       }
 }

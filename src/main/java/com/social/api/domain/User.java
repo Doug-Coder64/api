@@ -2,7 +2,7 @@ package com.social.api.domain;
 
 import java.util.Set;
 import jakarta.persistence.*;
-
+import com.fasterxml.jackson.annotation.*;
 import com.social.api.domain.common.BaseEntity;
 
 @Entity
@@ -11,6 +11,7 @@ public class User extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "user_id")
     private long id;
 
     @Column(name = "user_name", nullable = false)
@@ -28,7 +29,8 @@ public class User extends BaseEntity {
     @Column(name = "active_status", nullable = false)
     private boolean activeStatus;
 
-    @OneToMany
+    @JsonIgnore
+    @OneToMany(mappedBy="user")
     private Set<Post> postList;
 
     public long getId() {
@@ -82,7 +84,6 @@ public class User extends BaseEntity {
     }
 
     public User() {
-
     }
 
     public User(String userName, String email, String firstName, 

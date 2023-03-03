@@ -1,9 +1,12 @@
 com/social/api/repository/PostRepository.class
+com/social/api/domain/Post.class
+com/social/api/domain/util/LogItem.class
+com/social/api/repository/UserRepository.class
+com/social/api/domain/common/BaseEntity.class
 com/social/api/controller/UserController.class
 com/social/api/ApiApplication.class
 com/social/api/controller/PostController.class
-com/social/api/domain/Post.class
+com/social/api/util/SocialLogger.class
 com/social/api/domain/User.class
 com/social/api/domain/util/ErrorHandler.class
-com/social/api/repository/UserRepository.class
-com/social/api/domain/common/BaseEntity.class
+com/social/api/repository/LogRepository.class

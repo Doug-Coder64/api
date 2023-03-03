@@ -6,4 +6,7 @@
 /Users/dougpeterson/projects/social.api/src/main/java/com/social/api/domain/User.java
 /Users/dougpeterson/projects/social.api/src/main/java/com/social/api/ApiApplication.java
 /Users/dougpeterson/projects/social.api/src/main/java/com/social/api/domain/common/BaseEntity.java
+/Users/dougpeterson/projects/social.api/src/main/java/com/social/api/util/SocialLogger.java
+/Users/dougpeterson/projects/social.api/src/main/java/com/social/api/domain/util/LogItem.java
 /Users/dougpeterson/projects/social.api/src/main/java/com/social/api/domain/util/ErrorHandler.java
+/Users/dougpeterson/projects/social.api/src/main/java/com/social/api/repository/LogRepository.java
